@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="./addToCart.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-12 col-xl-3">
+            <div class="header-logo">
+                <img src="./assets/Innova-POS.png" alt="Innova Pos">
+            </div>
+            <div class="menubar d-none d-sm-none d-md-none d-lg-none d-xl-block">
+                <ul class="sidebar-links">
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="29.000000" height="26.000000" viewBox="0 0 29 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M27.38 10.55L13.99 0.51L0.61 10.55L1.24 12.46L2.31 12.46L2.31 24.68L25.68 24.68L25.68 12.46L26.74 12.46L27.38 10.55ZM4.43 22.56L4.43 10.34L13.99 3.17L23.56 10.34L23.56 22.56L18.24 22.56L18.24 16.3L17.18 15.24L10.81 15.24L9.74 16.3L9.74 22.56L4.43 22.56ZM11.87 22.56L16.12 22.56L16.12 17.36L11.87 17.36L11.87 22.56Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    <path id="Vector"
+                                        d="M28.56 10.18L13.99 -0.74L13.39 -0.29L-0.57 10.18L0.52 13.46L1.31 13.46L1.31 25.68L26.68 25.68L26.68 13.46L27.47 13.46L28.56 10.18ZM26.68 12.46L26.74 12.46L27.38 10.55L13.99 0.51L0.61 10.55L1.24 12.46L2.31 12.46L2.31 24.68L25.68 24.68L25.68 12.46L26.68 12.46ZM18.24 16.3L18.24 22.56L23.56 22.56L23.56 10.34L13.99 3.17L4.43 10.34L4.43 22.56L9.74 22.56L9.74 16.3L10.81 15.24L17.18 15.24L18.24 16.3ZM8.74 21.56L8.74 15.89L10.39 14.24L17.6 14.24L19.24 15.89L19.24 21.56L22.56 21.56L22.56 10.84L13.99 4.42L5.43 10.84L5.43 21.56L8.74 21.56ZM15.12 18.36L15.12 21.56L12.87 21.56L12.87 18.36L15.12 18.36ZM16.12 18.36L16.12 22.56L11.87 22.56L11.87 17.36L16.12 17.36L16.12 18.36Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <span class="link_name">Home</span>
+                            <!-- <span class="tooltip">Home</span> -->
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Mask"
+                                        d="M7.94 13.33C7.58 14.13 7.38 15.01 7.37 15.93L7.37 16L7.37 24L-0.88 24L-0.88 18.66C-0.88 15.74 1.53 13.38 4.53 13.33L4.62 13.33L7.94 13.33ZM18.37 10.66C21.41 10.66 23.87 13.05 23.87 16L23.87 24L8.75 24L8.75 16C8.75 13.05 11.21 10.66 14.25 10.66L18.37 10.66ZM6 4C8.27 4 10.12 5.79 10.12 8C10.12 10.2 8.27 12 6 12C3.72 12 1.87 10.2 1.87 8C1.87 5.79 3.72 4 6 4ZM16.31 0C18.96 0 21.12 2.09 21.12 4.66C21.12 7.23 18.96 9.33 16.31 9.33C13.65 9.33 11.5 7.23 11.5 4.66C11.5 2.09 13.65 0 16.31 0Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">User Management</span>
+                            <!-- <span class="tooltip">User Management</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="29.000000" height="26.000000" viewBox="0 0 29 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M23.7 0.2L7.66 0.2C5.25 0.2 3.29 2.04 3.29 4.29L3.29 5.66L1.83 5.66C1.02 5.66 0.37 6.27 0.37 7.02C0.37 7.78 1.02 8.39 1.83 8.39L3.29 8.39L3.29 11.12L1.83 11.12C1.02 11.12 0.37 11.73 0.37 12.48C0.37 13.24 1.02 13.85 1.83 13.85L3.29 13.85L3.29 16.58L1.83 16.58C1.02 16.58 0.37 17.19 0.37 17.94C0.37 18.7 1.02 19.31 1.83 19.31L3.29 19.31L3.29 20.67C3.29 22.93 5.25 24.77 7.66 24.77L23.7 24.77C26.12 24.77 28.08 22.93 28.08 20.67L28.08 4.29C28.08 2.04 26.12 0.2 23.7 0.2ZM6.2 4.29C6.2 3.54 6.86 2.93 7.66 2.93L7.66 5.66L6.2 5.66L6.2 4.29ZM6.2 8.39L7.66 8.39L7.66 11.12L6.2 11.12L6.2 8.39ZM6.2 13.85L7.66 13.85L7.66 16.58L6.2 16.58L6.2 13.85ZM6.2 20.67L6.2 19.31L7.66 19.31L7.66 22.04C6.86 22.04 6.2 21.42 6.2 20.67ZM25.16 20.67C25.16 21.42 24.51 22.04 23.7 22.04L9.12 22.04L9.12 2.93L23.7 2.93C24.51 2.93 25.16 3.54 25.16 4.29L25.16 20.67Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                    <path id="Vector"
+                                        d="M7.66 0.2C5.25 0.2 3.29 2.04 3.29 4.29L3.29 5.66L1.83 5.66C1.02 5.66 0.37 6.27 0.37 7.02C0.37 7.78 1.02 8.39 1.83 8.39L3.29 8.39L3.29 11.12L1.83 11.12C1.02 11.12 0.37 11.73 0.37 12.48C0.37 13.24 1.02 13.85 1.83 13.85L3.29 13.85L3.29 16.58L1.83 16.58C1.02 16.58 0.37 17.19 0.37 17.94C0.37 18.7 1.02 19.31 1.83 19.31L3.29 19.31L3.29 20.67C3.29 22.93 5.25 24.77 7.66 24.77L23.7 24.77C26.12 24.77 28.08 22.93 28.08 20.67L28.08 4.29C28.08 2.04 26.12 0.2 23.7 0.2L7.66 0.2ZM7.66 2.93L7.66 5.66L6.2 5.66L6.2 4.29C6.2 3.54 6.86 2.93 7.66 2.93ZM7.66 8.39L7.66 11.12L6.2 11.12L6.2 8.39L7.66 8.39ZM7.66 13.85L7.66 16.58L6.2 16.58L6.2 13.85L7.66 13.85ZM6.2 19.31L7.66 19.31L7.66 22.04C6.86 22.04 6.2 21.42 6.2 20.67L6.2 19.31ZM23.7 22.04L9.12 22.04L9.12 2.93L23.7 2.93C24.51 2.93 25.16 3.54 25.16 4.29L25.16 20.67C25.16 21.42 24.51 22.04 23.7 22.04Z"
+                                        stroke="#080341" stroke-opacity="1.000000" stroke-width="1.000000" />
+                                    <path id="Vector"
+                                        d="M19.33 10.44C19.33 11.94 18.02 13.17 16.41 13.17C14.8 13.17 13.5 11.94 13.5 10.44C13.5 8.93 14.8 7.71 16.41 7.71C18.02 7.71 19.33 8.93 19.33 10.44Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    <path id="Vector"
+                                        d="M16.41 14.33C14.13 14.33 12.77 15.31 12.77 16.28C12.77 16.77 14.13 17.26 16.41 17.26C18.55 17.26 20.06 16.77 20.06 16.28C20.06 15.31 18.63 14.33 16.41 14.33Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Contacts</span>
+                            <!-- <span class="tooltip">Contacts</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="27.000000" height="26.000000" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M11.25 7.12L23.62 7.12C25.48 7.12 27 8.57 27 10.37L27 22.29C27 24.08 25.48 25.54 23.62 25.54L11.25 25.54C9.38 25.54 7.87 24.08 7.87 22.29L7.87 10.37C7.87 8.57 9.38 7.12 11.25 7.12ZM19.12 4.95L11.25 4.95C8.14 4.95 5.62 7.37 5.62 10.37L5.62 17.95L3.37 17.95C1.51 17.95 0 16.5 0 14.7L0 2.78C0 0.98 1.51 -0.47 3.37 -0.47L15.75 -0.47C17.61 -0.47 19.12 0.98 19.12 2.78L19.12 4.95Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Products</span>
+                            <!-- <span class="tooltip">Products</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="26.000000" height="22.000000" viewBox="0 0 26 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M12.5 -0.87C5.37 -0.87 -0.42 4.17 -0.42 10.37C-0.42 16.56 5.37 21.6 12.5 21.6C19.62 21.6 25.41 16.56 25.41 10.37C25.41 4.17 19.62 -0.87 12.5 -0.87ZM12.5 15.98L6.04 10.37L11.2 10.37L11.2 4.75L13.79 4.75L13.79 10.37L18.95 10.37L12.5 15.98Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Purchase</span>
+                            <!-- <span class="tooltip">Purchase</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="26.000000" height="23.000000" viewBox="0 0 26 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M12.5 22.1C19.62 22.1 25.41 17.06 25.41 10.86C25.41 4.66 19.62 -0.38 12.5 -0.38C5.37 -0.38 -0.42 4.66 -0.42 10.86C-0.42 17.06 5.37 22.1 12.5 22.1ZM12.5 5.24L18.95 10.86L13.79 10.86L13.79 16.48L11.2 16.48L11.2 10.86L6.04 10.86L12.5 5.24Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Sell</span>
+                            <!-- <span class="tooltip">Sell</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="26.000000" height="16.000000" viewBox="0 0 26 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M1.47 -0.66C0.66 -0.66 0 -0.11 0 0.55L0 11.64C0 12.3 0.74 12.91 1.56 12.91L3.68 12.91C3.93 14.11 5.21 15.03 6.76 15.03C8.3 15.03 9.58 14.11 9.83 12.91L14.64 12.91C15.45 12.91 16.12 12.37 16.12 11.7L16.12 0.58C16.12 -0.1 15.46 -0.66 14.65 -0.66L1.47 -0.66ZM17.16 2.31L17.16 12.91C17.4 14.11 18.73 15.03 20.28 15.03C21.82 15.03 23.1 14.11 23.35 12.91L24.44 12.91C25.25 12.91 26 12.3 26 11.64L26 7.56C26 6.7 25.24 5.83 25.15 5.73L22.99 3.37C22.49 2.88 21.72 2.31 20.8 2.31L17.16 2.31ZM19.76 4.43L22.66 4.43L24.32 6.23C24.5 6.44 24.96 7.06 24.96 7.56L24.96 7.82L19.76 7.82C19.24 7.82 18.71 7.4 18.71 6.97L18.71 5.28C18.71 4.81 19.24 4.43 19.76 4.43ZM6.76 10.79C7.9 10.79 8.84 11.55 8.84 12.48C8.84 13.42 7.9 14.18 6.76 14.18C5.61 14.18 4.67 13.42 4.67 12.48C4.67 11.55 5.61 10.79 6.76 10.79ZM20.28 10.79C21.42 10.79 22.36 11.55 22.36 12.48C22.36 13.42 21.42 14.18 20.28 14.18C19.13 14.18 18.2 13.42 18.2 12.48C18.2 11.55 19.13 10.79 20.28 10.79Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Stock Transfer</span>
+                            <!-- <span class="tooltip">Stock Transfer</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="16.000000" height="17.000000" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M7.5 -0.82C11.99 -0.82 15.64 0.68 15.64 2.51C15.64 4.35 11.99 5.84 7.5 5.84C3 5.84 -0.65 4.35 -0.65 2.51C-0.65 0.68 3 -0.82 7.5 -0.82Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                    <path id="Vector"
+                                        d="M15.64 13.19C15.64 15.03 11.99 16.52 7.49 16.52C3 16.52 -0.65 15.03 -0.65 13.19L-0.65 11.31C0.84 12.62 3.93 13.53 7.5 13.53C11.06 13.53 14.15 12.62 15.64 11.31L15.64 13.19L15.64 13.19Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                    <path id="Vector"
+                                        d="M15.64 9.53C15.64 11.36 11.99 12.86 7.49 12.86C3 12.86 -0.65 11.36 -0.65 9.53L-0.65 7.64C0.84 8.96 3.93 9.86 7.5 9.86C11.06 9.86 14.15 8.96 15.64 7.64L15.64 9.53L15.64 9.53Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                    <path id="Vector"
+                                        d="M15.64 5.86C15.64 7.7 11.99 9.19 7.49 9.19C3 9.19 -0.65 7.7 -0.65 5.86L-0.65 4.29C0.84 5.61 3.93 6.51 7.5 6.51C11.06 6.51 14.15 5.61 15.64 4.29L15.64 5.86L15.64 5.86Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Stock Adjustment</span>
+                            <!-- <span class="tooltip">Stock Adjustment</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="17.000000" height="15.000000" viewBox="0 0 17 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M16.33 7.17C16.33 11.16 12.6 14.39 8 14.39C3.39 14.39 -0.34 11.16 -0.34 7.17C-0.34 3.18 3.39 -0.06 8 -0.06C12.6 -0.06 16.33 3.18 16.33 7.17ZM11.12 7.17C11.12 7.46 10.84 7.71 10.5 7.71L5.5 7.71C5.15 7.71 4.87 7.46 4.87 7.17C4.87 6.87 5.15 6.62 5.5 6.62L10.5 6.62C10.84 6.62 11.12 6.87 11.12 7.17Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Expense</span>
+                            <!-- <span class="tooltip">Expense</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="22.000000" height="14.000000" viewBox="0 0 22 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M13.22 8.39L16.55 8.39M13.22 5.08L16.55 5.08M7.66 4.67L7.66 3.85M5.44 8.8L7.66 8.8C9.88 8.8 9.88 8.29 9.88 7.7C9.88 6.9 9.88 6.74 7.66 6.74C5.44 6.74 5.44 6.51 5.44 5.77C5.44 5.03 5.66 4.67 7.66 4.67L9.88 4.67M7.66 8.8L7.66 9.63M17.44 12.52C18.68 12.52 19.31 12.52 19.78 12.34C20.2 12.18 20.54 11.92 20.75 11.61C21 11.26 21 10.8 21 9.87L21 3.6C21 2.67 21 2.21 20.75 1.86C20.54 1.55 20.2 1.29 19.78 1.14C19.31 0.96 18.68 0.96 17.44 0.96L4.55 0.96C3.31 0.96 2.68 0.96 2.21 1.14C1.79 1.29 1.45 1.55 1.24 1.86C1 2.21 1 2.67 1 3.6L1 9.87C1 10.8 1 11.26 1.24 11.61C1.45 11.92 1.79 12.18 2.21 12.34C2.68 12.52 3.31 12.52 4.55 12.52L17.44 12.52Z"
+                                        stroke="#080341" stroke-opacity="1.000000" stroke-width="2.000000"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                            <span class="link_name">Payment Accounts</span>
+                            <!-- <span class="tooltip">Payment Accounts</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="16.000000" height="15.000000" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M14.37 -0.33L10.87 -0.33C10.39 -0.33 10 0.01 10 0.43L10 4.25L8.25 4.25L8.25 3.49C8.25 3.06 7.86 2.72 7.37 2.72L3.87 2.72C3.39 2.72 3 3.06 3 3.49L3 7.3L0.37 7.3C-0.11 7.3 -0.5 7.64 -0.5 8.06L-0.5 14.16C-0.5 14.58 -0.11 14.93 0.37 14.93L3.87 14.93L7.37 14.93L10.87 14.93L14.37 14.93C14.86 14.93 15.25 14.58 15.25 14.16L15.25 0.44C15.25 0.01 14.86 -0.33 14.37 -0.33ZM3 13.4L1.25 13.4L1.25 8.82L3 8.82L3 13.4ZM10 13.4L8.25 13.4L8.25 5.77L10 5.77L10 13.4Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Reports</span>
+                            <!-- <span class="tooltip">Reports</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="18.000000" height="11.000000" viewBox="0 0 18 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M0.77 -0.1C-0.25 0.75 -0.25 2.11 -0.25 4.84C-0.25 7.56 -0.25 8.92 0.77 9.77C1.8 10.62 3.45 10.62 6.75 10.62L10.25 10.62C13.54 10.62 15.19 10.62 16.22 9.77C17.25 8.92 17.25 7.56 17.25 4.84C17.25 2.11 17.25 0.75 16.22 -0.1C15.19 -0.94 13.54 -0.94 10.25 -0.94L6.75 -0.94C3.45 -0.94 1.8 -0.94 0.77 -0.1ZM14.25 1.6C14.48 1.83 14.44 2.17 14.17 2.36L12.24 3.69C11.47 4.22 10.84 4.65 10.28 4.95C9.71 5.25 9.14 5.45 8.5 5.45C7.85 5.45 7.28 5.25 6.71 4.95C6.15 4.65 5.52 4.22 4.75 3.69L2.82 2.36C2.55 2.17 2.51 1.83 2.74 1.6C2.97 1.37 3.39 1.34 3.67 1.53L5.55 2.83C6.37 3.39 6.94 3.78 7.42 4.04C7.88 4.28 8.19 4.36 8.5 4.36C8.8 4.36 9.11 4.28 9.57 4.04C10.05 3.78 10.62 3.39 11.44 2.83L13.32 1.53C13.6 1.34 14.02 1.37 14.25 1.6Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Notification Templates</span>
+                            <!-- <span class="tooltip">Notification Templates</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.0889 2.53209C12.7495 2.39766 12.3191 2.39766 11.4583 2.39766C10.5976 2.39766 10.1672 2.39766 9.82776 2.53209C9.37511 2.71134 9.0155 3.05515 8.82801 3.48789C8.74242 3.68543 8.70893 3.91517 8.69582 4.25027C8.67656 4.74273 8.41239 5.19857 7.96599 5.44497C7.51958 5.69137 6.97458 5.68217 6.51886 5.45189C6.20875 5.29518 5.9839 5.20804 5.76216 5.18014C5.27641 5.119 4.78516 5.24484 4.39648 5.52998C4.10496 5.74384 3.88977 6.10016 3.45941 6.8128C3.02904 7.52545 2.81386 7.88177 2.7659 8.23006C2.70195 8.69445 2.83358 9.1641 3.13184 9.53572C3.26797 9.70535 3.45929 9.84788 3.75622 10.0262C4.19275 10.2885 4.47362 10.7352 4.4736 11.2281C4.47357 11.7209 4.1927 12.1675 3.75622 12.4297C3.45924 12.6082 3.26789 12.7508 3.13174 12.9204C2.83349 13.292 2.70186 13.7616 2.76581 14.226C2.81377 14.5743 3.02896 14.9307 3.45931 15.6433C3.88968 16.3559 4.10487 16.7123 4.39639 16.9261C4.78507 17.2112 5.27632 17.337 5.76206 17.2759C5.9838 17.248 6.20863 17.1609 6.51872 17.0042C6.97447 16.7739 7.51951 16.7647 7.96594 17.0111C8.41238 17.2576 8.67655 17.7134 8.69582 18.2059C8.70893 18.541 8.74242 18.7707 8.82801 18.9683C9.0155 19.401 9.37511 19.7448 9.82776 19.9241C10.1672 20.0585 10.5976 20.0585 11.4583 20.0585C12.3191 20.0585 12.7495 20.0585 13.0889 19.9241C13.5415 19.7448 13.9012 19.401 14.0886 18.9683C14.1742 18.7707 14.2078 18.541 14.2209 18.2059C14.2401 17.7134 14.5042 17.2576 14.9506 17.0111C15.3971 16.7646 15.9421 16.7739 16.3979 17.0042C16.708 17.1609 16.9328 17.2479 17.1545 17.2758C17.6402 17.337 18.1315 17.2112 18.5201 16.9261C18.8117 16.7122 19.0269 16.3559 19.4573 15.6432C19.8876 14.9306 20.1028 14.5743 20.1508 14.226C20.2147 13.7616 20.0831 13.2919 19.7849 12.9203C19.6487 12.7507 19.4573 12.6081 19.1603 12.4297C18.7239 12.1675 18.4431 11.7208 18.4431 11.228C18.4431 10.7352 18.7239 10.2886 19.1603 10.0264C19.4574 9.84796 19.6487 9.70544 19.785 9.53572C20.0832 9.16416 20.2148 8.69451 20.1509 8.23012C20.1029 7.88183 19.8877 7.5255 19.4573 6.81286C19.027 6.10022 18.8118 5.7439 18.5202 5.53004C18.1316 5.2449 17.6403 5.11906 17.1546 5.1802C16.9328 5.2081 16.708 5.29523 16.398 5.45192C15.9422 5.68221 15.3972 5.69142 14.9507 5.445C14.5043 5.19859 14.2401 4.74272 14.2208 4.25023C14.2077 3.91515 14.1742 3.68542 14.0886 3.48789C13.9012 3.05515 13.5415 2.71134 13.0889 2.53209ZM11.4583 13.8772C12.9887 13.8772 14.2292 12.6912 14.2292 11.2281C14.2292 9.76496 12.9887 8.57895 11.4583 8.57895C9.92796 8.57895 8.68739 9.76496 8.68739 11.2281C8.68739 12.6912 9.92796 13.8772 11.4583 13.8772Z"
+                                        fill="#080341" />
+                                </svg>
+                            </span>
+
+                            <span class="link_name">Settings</span>
+                            <!-- <span class="tooltip">Settings</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="23.000000" height="25.000000" viewBox="0 0 23 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs>
+                                        <clipPath id="clip2_153">
+                                            <rect id="user-multiple-users_svgrepo.com" width="23.000000"
+                                                height="25.046251" transform="translate(0.000000 -0.725708)"
+                                                fill="white" fill-opacity="0" />
+                                        </clipPath>
+                                    </defs>
+                                    <rect id="user-multiple-users_svgrepo.com" width="23.000000" height="25.046251"
+                                        transform="translate(0.000000 -0.725708)" fill="#FFFFFF" fill-opacity="0" />
+                                    <g clip-path="url(#clip2_153)">
+                                        <path id="Vector"
+                                            d="M14.6 10.14C14.6 12.01 13.21 13.52 11.5 13.52C9.78 13.52 8.39 12.01 8.39 10.14C8.39 8.27 9.78 6.76 11.5 6.76C13.21 6.76 14.6 8.27 14.6 10.14Z"
+                                            fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                        <path id="Vector"
+                                            d="M16.41 20.08C16.36 16.85 14.18 14.26 11.5 14.26C8.81 14.26 6.63 16.85 6.58 20.08L16.41 20.08Z"
+                                            fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                        <path id="Vector"
+                                            d="M6.02 6.04C6.02 7.45 4.98 8.58 3.69 8.58C2.4 8.58 1.36 7.45 1.36 6.04C1.36 4.64 2.4 3.5 3.69 3.5C4.98 3.5 6.02 4.64 6.02 6.04Z"
+                                            fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                        <path id="Vector"
+                                            d="M7.38 13.66C7.34 11.24 5.7 9.28 3.69 9.28C1.67 9.28 0.04 11.24 0 13.66L7.38 13.66Z"
+                                            fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                        <path id="Vector"
+                                            d="M21.63 6.04C21.63 7.45 20.59 8.58 19.3 8.58C18.01 8.58 16.97 7.45 16.97 6.04C16.97 4.64 18.01 3.5 19.3 3.5C20.59 3.5 21.63 4.64 21.63 6.04Z"
+                                            fill="#080341" fill-opacity="1.000000" fill-rule="evenodd" />
+                                        <path id="Vector"
+                                            d="M23 13.66C22.95 11.24 21.32 9.28 19.3 9.28C17.29 9.28 15.65 11.24 15.61 13.66L23 13.66Z"
+                                            fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                    </g>
+                                </svg>
+                            </span>
+
+
+                            <span class="link_name">HRM</span>
+                            <!-- <span class="tooltip">HRM</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="link_logo">
+                                <svg width="17.000000" height="14.000000" viewBox="0 0 17 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M8 -0.97C3.4 -0.97 -0.34 2.27 -0.34 6.25C-0.34 10.23 3.4 13.48 8 13.48C12.59 13.48 16.33 10.23 16.33 6.25C16.33 2.27 12.59 -0.97 8 -0.97ZM11.98 4.59L7.25 8.69C7.14 8.79 6.98 8.85 6.81 8.85C6.65 8.85 6.49 8.79 6.37 8.69L4.01 6.64C3.77 6.43 3.77 6.09 4.01 5.88C4.25 5.67 4.65 5.67 4.9 5.88L6.81 7.54L11.1 3.82C11.34 3.61 11.74 3.61 11.98 3.82C12.22 4.03 12.22 4.37 11.98 4.59Z"
+                                        fill="#080341" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>
+                            </span>
+                            <span class="link_name">Essentials</span>
+                            <!-- <span class="tooltip">Essentials</span> -->
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-12 col-xl-8">
+            <div class="header">
+                <div class="menu-btn">
+                    <svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs>
+                            <clipPath id="clip3_3">
+                                <rect id="side-menu_svgrepo.com" width="60.000000" height="60.000000" fill="white"
+                                    fill-opacity="0" />
+                            </clipPath>
+                        </defs>
+                        <rect id="side-menu_svgrepo.com" width="60.000000" height="60.000000" fill="#FFFFFF"
+                            fill-opacity="0" />
+                        <g clip-path="url(#clip3_3)">
+                            <path id="Vector" d="M21.42 18.57L44.28 18.57" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                stroke-width="2.857143" stroke-linejoin="round" stroke-linecap="round" />
+                            <path id="Vector" d="M21.42 29.99L35.71 29.99" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                stroke-width="2.857143" stroke-linejoin="round" stroke-linecap="round" />
+                            <path id="Vector" d="M21.42 41.42L44.28 41.42" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                stroke-width="2.857143" stroke-linejoin="round" stroke-linecap="round" />
+                            <path id="Vector"
+                                d="M12.85 21.42C14.28 21.42 15.71 20 15.71 18.57C15.71 17.14 14.28 15.71 12.85 15.71C11.42 15.71 10 17.14 10 18.57C10 20 11.42 21.42 12.85 21.42ZM12.85 32.85C14.28 32.85 15.71 31.42 15.71 30C15.71 28.57 14.28 27.14 12.85 27.14C11.42 27.14 10 28.57 10 30C10 31.42 11.42 32.85 12.85 32.85ZM12.85 44.28C14.28 44.28 15.71 42.85 15.71 41.42C15.71 40 14.28 38.57 12.85 38.57C11.42 38.57 10 40 10 41.42C10 42.85 11.42 44.28 12.85 44.28Z"
+                                fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="middle-header d-none d-sm-none d-md-none d-xl-flex">
+                    <div>
+                        <svg width="41.000000" height="40.000000" viewBox="0 0 41 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs>
+                                <clipPath id="clip4_17">
+                                    <rect id="down-arrow_svgrepo.com" width="24.481192" height="20.645161"
+                                        transform="translate(8.160400 9.677460)" fill="white" fill-opacity="0" />
+                                </clipPath>
+                            </defs>
+                            <rect id="Rectangle 5" width="40.801983" height="39.354839" fill="#25ADD6"
+                                fill-opacity="1.000000" />
+                            <ellipse id="Ellipse 1" cx="20.400970" cy="20.645172" rx="9.729704" ry="9.677421"
+                                fill="#D9D9D9" fill-opacity="1.000000" />
+                            <rect id="down-arrow_svgrepo.com" width="24.481192" height="20.645161"
+                                transform="translate(8.160400 9.677460)" fill="#FFFFFF" fill-opacity="0" />
+                            <g clip-path="url(#clip4_17)">
+                                <path id="Vector"
+                                    d="M20.52 13.78C20.25 13.78 20.03 13.96 20.03 14.19L20.03 24.57L16.28 21.36C16.09 21.2 15.81 21.2 15.62 21.36C15.43 21.52 15.44 21.78 15.63 21.94L20.26 25.84C20.35 25.91 20.48 25.96 20.61 25.96C20.74 25.96 20.86 25.91 20.96 25.84L25.57 21.94C25.76 21.78 25.76 21.52 25.57 21.36C25.38 21.2 25.01 21.2 24.82 21.36L21.01 24.52L21.01 14.19C21.01 13.96 20.79 13.78 20.52 13.78Z"
+                                    fill="#25ADD6" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector"
+                                    d="M20.03 14.19L20.03 24.57L16.28 21.36C16.09 21.2 15.81 21.2 15.62 21.36C15.43 21.52 15.44 21.78 15.63 21.94L20.26 25.84C20.35 25.91 20.48 25.96 20.61 25.96C20.74 25.96 20.86 25.91 20.96 25.84L25.57 21.94C25.76 21.78 25.76 21.52 25.57 21.36C25.38 21.2 25.01 21.2 24.82 21.36L21.01 24.52L21.01 14.19C21.01 13.96 20.79 13.78 20.52 13.78C20.25 13.78 20.03 13.96 20.03 14.19Z"
+                                    stroke="#25ADD6" stroke-opacity="1.000000" stroke-width="1.000000" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <svg width="41.000000" height="40.000000" viewBox="0 0 41 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs>
+                                <clipPath id="clip4_57">
+                                    <rect id="plus-circle_svgrepo.com" width="17.576239" height="17.419357"
+                                        transform="translate(11.560364 10.967743)" fill="white" fill-opacity="0" />
+                                </clipPath>
+                            </defs>
+                            <rect id="Rectangle 6" x="-0.366394" width="40.801983" height="39.354839" fill="#DF4803"
+                                fill-opacity="1.000000" />
+                            <rect id="plus-circle_svgrepo.com" width="17.576239" height="17.419357"
+                                transform="translate(11.560364 10.967743)" fill="#FFFFFF" fill-opacity="0" />
+                            <g clip-path="url(#clip4_57)">
+                                <path id="plus-circle"
+                                    d="M23.64 20.22L20.89 20.22L20.89 22.94C20.89 23.24 20.65 23.48 20.34 23.48C20.04 23.48 19.79 23.24 19.79 22.94L19.79 20.22L17.05 20.22C16.74 20.22 16.5 19.97 16.5 19.67C16.5 19.37 16.74 19.13 17.05 19.13L19.79 19.13L19.79 16.41C19.79 16.11 20.04 15.86 20.34 15.86C20.65 15.86 20.89 16.11 20.89 16.41L20.89 19.13L23.64 19.13C23.94 19.13 24.19 19.37 24.19 19.67C24.19 19.97 23.94 20.22 23.64 20.22ZM20.34 10.96C15.49 10.96 11.56 14.86 11.56 19.67C11.56 24.48 15.49 28.38 20.34 28.38C25.2 28.38 29.13 24.48 29.13 19.67C29.13 14.86 25.2 10.96 20.34 10.96Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <svg width="41.000000" height="40.000000" viewBox="0 0 41 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs>
+                                <clipPath id="clip4_68">
+                                    <rect id="calculator_svgrepo.com" width="30.130695" height="27.741938"
+                                        transform="translate(5.172302 5.806427)" fill="white" fill-opacity="0" />
+                                </clipPath>
+                            </defs>
+                            <rect id="Rectangle 7" x="-0.477234" width="40.801983" height="39.354839" fill="#DF4803"
+                                fill-opacity="1.000000" />
+                            <rect id="calculator_svgrepo.com" width="30.130695" height="27.741938"
+                                transform="translate(5.172302 5.806427)" fill="#FFFFFF" fill-opacity="0" />
+                            <g clip-path="url(#clip4_68)">
+                                <path id="Vector"
+                                    d="M11.44 16.2L29.02 16.2M24 26.61L24 23.14M16.47 26.61L16.48 26.61M20.23 26.61L20.25 26.61M20.23 23.14L20.25 23.14M16.47 23.14L16.48 23.14M24 19.67L24.01 19.67M20.23 19.67L20.25 19.67M16.47 19.67L16.48 19.67M25 30.08C26.41 30.08 27.11 30.08 27.65 29.82C28.12 29.6 28.51 29.25 28.75 28.81C29.02 28.32 29.02 27.67 29.02 26.38L29.02 12.97C29.02 11.67 29.02 11.03 28.75 10.53C28.51 10.1 28.12 9.74 27.65 9.52C27.11 9.27 26.41 9.27 25 9.27L15.46 9.27C14.06 9.27 13.35 9.27 12.82 9.52C12.34 9.74 11.96 10.1 11.72 10.53C11.44 11.03 11.44 11.67 11.44 12.97L11.44 26.38C11.44 27.67 11.44 28.32 11.72 28.81C11.96 29.25 12.34 29.6 12.82 29.82C13.35 30.08 14.06 30.08 15.46 30.08L25 30.08Z"
+                                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="3.000000"
+                                    stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <svg width="75.000000" height="39.000000" viewBox="0 0 75 39" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs>
+                                <clipPath id="clip4_42">
+                                    <rect id="microsoft-alt_svgrepo.com" width="26.992083" height="24.516130"
+                                        transform="translate(6.316895 6.741943)" fill="white" fill-opacity="0" />
+                                </clipPath>
+                            </defs>
+                            <rect id="Rectangle 8" x="-0.588074" y="-0.354858" width="74.699013" height="39.354839"
+                                fill="#DF4803" fill-opacity="1.000000" />
+                            <path id="POS"
+                                d="M51.72 20.8Q52.17 19.85 52.17 18.59L52.17 18.21Q52.17 16.95 51.72 16Q51.37 15.27 50.81 14.8Q50.63 14.65 50.43 14.53Q50.26 14.42 50.08 14.34Q49.38 14.01 48.54 14.01Q47.69 14.01 47 14.34Q46.81 14.42 46.64 14.53Q46.44 14.65 46.26 14.8Q45.7 15.27 45.36 16Q44.9 16.95 44.9 18.21L44.9 18.64Q44.91 19.87 45.37 20.81Q45.7 21.5 46.23 21.96Q46.43 22.13 46.66 22.27Q46.84 22.38 47.04 22.47Q47.73 22.78 48.55 22.78Q49.41 22.78 50.11 22.45Q50.29 22.37 50.45 22.26Q50.68 22.12 50.89 21.94Q51.41 21.48 51.72 20.8ZM57.72 19.87Q57.87 20.1 57.87 20.42Q57.87 20.68 57.76 20.87Q57.67 21.02 57.52 21.14Q57.17 21.39 56.54 21.39Q55.55 21.39 55.14 20.9Q54.85 20.56 54.85 19.98L53.09 19.98Q53.09 20.6 53.33 21.1Q53.41 21.27 53.51 21.43Q53.52 21.44 53.53 21.45Q53.95 22.06 54.75 22.42Q55.56 22.78 56.54 22.78Q57.96 22.78 58.8 22.15Q59.16 21.88 59.36 21.52Q59.63 21.04 59.63 20.41Q59.63 19.85 59.42 19.39Q59.25 19.04 58.95 18.75Q58.26 18.08 56.76 17.63Q55.95 17.38 55.53 17.1Q55.23 16.9 55.15 16.63Q55.11 16.52 55.11 16.4Q55.11 16.19 55.2 16.01Q55.29 15.83 55.47 15.69Q55.83 15.41 56.47 15.41Q57.14 15.41 57.51 15.74Q57.6 15.82 57.67 15.92Q57.88 16.21 57.88 16.65L59.63 16.65Q59.63 16.12 59.45 15.67Q59.36 15.47 59.24 15.28Q59.15 15.15 59.05 15.03Q58.69 14.6 58.13 14.34Q57.41 14.01 56.5 14.01Q55.59 14.01 54.86 14.32Q54.13 14.62 53.74 15.16Q53.58 15.39 53.49 15.63Q53.35 15.99 53.35 16.4Q53.35 16.8 53.49 17.15Q53.79 17.96 54.81 18.51Q55.34 18.8 56.25 19.1Q57.17 19.39 57.52 19.66Q57.64 19.75 57.72 19.87ZM39.18 22.66L39.18 19.66L40.72 19.66Q42.24 19.66 43.1 18.93Q43.39 18.68 43.59 18.37Q43.96 17.77 43.96 16.95Q43.96 16.3 43.71 15.76Q43.64 15.61 43.56 15.48Q43.45 15.29 43.3 15.12Q42.95 14.73 42.44 14.48Q41.71 14.13 40.75 14.13L37.42 14.13L37.42 22.66L39.18 22.66ZM49.91 16.16Q50.39 16.86 50.39 18.2L50.39 18.62Q50.38 19.95 49.91 20.64Q49.7 20.95 49.41 21.12Q49.04 21.34 48.55 21.34Q48.06 21.34 47.69 21.12Q47.38 20.94 47.17 20.62Q46.69 19.9 46.69 18.59L46.69 18.17Q46.69 16.84 47.17 16.15Q47.38 15.85 47.67 15.68Q48.04 15.47 48.54 15.47Q49.03 15.47 49.4 15.68Q49.7 15.86 49.91 16.16ZM40.75 18.23L39.18 18.23L39.18 15.55L40.79 15.55Q41.32 15.56 41.66 15.82Q41.74 15.88 41.81 15.95Q41.89 16.04 41.96 16.14Q42.18 16.48 42.18 16.97Q42.18 17.46 41.94 17.76Q41.89 17.84 41.81 17.9Q41.45 18.23 40.75 18.23Z"
+                                fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                            <rect id="microsoft-alt_svgrepo.com" width="26.992083" height="24.516130"
+                                transform="translate(6.316895 6.741943)" fill="#FFFFFF" fill-opacity="0" />
+                            <g clip-path="url(#clip4_42)">
+                                <path id="Vector" d="M30.21 9.55L20.65 9.55L20.65 18.23L30.21 18.23L30.21 9.55Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector" d="M30.21 9.55L30.21 18.23L20.65 18.23L20.65 9.55L30.21 9.55Z"
+                                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.250000"
+                                    stroke-linejoin="round" />
+                                <path id="Vector" d="M30.21 19.76L20.65 19.76L20.65 28.44L30.21 28.44L30.21 19.76Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector" d="M30.21 19.76L30.21 28.44L20.65 28.44L20.65 19.76L30.21 19.76Z"
+                                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.250000"
+                                    stroke-linejoin="round" />
+                                <path id="Vector" d="M18.96 9.55L9.4 9.55L9.4 18.23L18.96 18.23L18.96 9.55Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector" d="M18.96 9.55L18.96 18.23L9.4 18.23L9.4 9.55L18.96 9.55Z"
+                                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.250000"
+                                    stroke-linejoin="round" />
+                                <path id="Vector" d="M18.96 19.76L9.4 19.76L9.4 28.44L18.96 28.44L18.96 19.76Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector" d="M18.96 19.76L18.96 28.44L9.4 28.44L9.4 19.76L18.96 19.76Z"
+                                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.250000"
+                                    stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs>
+                                <clipPath id="clip4_52">
+                                    <rect id="cash_svgrepo.com" width="28.247526" height="25.806454"
+                                        transform="translate(5.475220 6.451630)" fill="white" fill-opacity="0" />
+                                </clipPath>
+                            </defs>
+                            <rect id="Rectangle 7" x="-0.802002" width="40.801983" height="39.354839" fill="#DF4803"
+                                fill-opacity="1.000000" />
+                            <rect id="cash_svgrepo.com" width="28.247526" height="25.806454"
+                                transform="translate(5.475220 6.451630)" fill="#FFFFFF" fill-opacity="0" />
+                            <g clip-path="url(#clip4_52)">
+                                <path id="Vector"
+                                    d="M19.59 23.65C22.19 23.65 24.3 21.73 24.3 19.35C24.3 16.97 22.19 15.05 19.59 15.05C16.99 15.05 14.89 16.97 14.89 19.35C14.89 21.73 16.99 23.65 19.59 23.65ZM19.59 21.6C18.23 21.6 17.13 20.6 17.13 19.35C17.13 18.1 18.23 17.1 19.59 17.1C20.96 17.1 22.06 18.1 22.06 19.35C22.06 20.6 20.96 21.6 19.59 21.6Z"
+                                    fill="#FDFDFD" fill-opacity="1.000000" fill-rule="evenodd" />
+                                <path id="Vector"
+                                    d="M13.71 19.35C13.71 19.94 13.18 20.43 12.53 20.43C11.88 20.43 11.36 19.94 11.36 19.35C11.36 18.76 11.88 18.27 12.53 18.27C13.18 18.27 13.71 18.76 13.71 19.35Z"
+                                    fill="#FDFDFD" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector"
+                                    d="M26.66 20.43C27.31 20.43 27.83 19.94 27.83 19.35C27.83 18.76 27.31 18.27 26.66 18.27C26.01 18.27 25.48 18.76 25.48 19.35C25.48 19.94 26.01 20.43 26.66 20.43Z"
+                                    fill="#FDFDFD" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector"
+                                    d="M30.19 11.82C32.14 11.82 33.72 13.27 33.72 15.05L33.72 23.65C33.72 25.43 32.14 26.88 30.19 26.88L9 26.88C7.05 26.88 5.47 25.43 5.47 23.65L5.47 15.05C5.47 13.27 7.05 11.82 9 11.82L30.19 11.82ZM10.18 13.97L29.01 13.97C29.01 14.26 29.07 14.54 29.19 14.8C29.31 15.06 29.48 15.29 29.7 15.49C29.92 15.69 30.18 15.85 30.46 15.96C30.75 16.07 31.05 16.12 31.36 16.12L31.36 22.58C31.05 22.58 30.75 22.63 30.46 22.74C30.18 22.85 29.92 23.01 29.7 23.21C29.48 23.41 29.31 23.64 29.19 23.9C29.07 24.16 29.01 24.44 29.01 24.73L10.18 24.73C10.18 24.44 10.12 24.16 10 23.9C9.88 23.64 9.71 23.41 9.49 23.21C9.27 23.01 9.01 22.85 8.73 22.74C8.44 22.63 8.13 22.58 7.82 22.58L7.82 16.12C8.13 16.12 8.44 16.07 8.73 15.96C9.01 15.85 9.27 15.69 9.49 15.49C9.71 15.29 9.88 15.06 10 14.8C10.12 14.54 10.18 14.26 10.18 13.97Z"
+                                    fill="#FDFDFD" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <svg width="126.000000" height="19.000000" viewBox="0 0 126 19" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path id="03/06/2024"
+                                d="M9.17 15.35Q10.64 13.48 10.64 9.94L10.64 6.8Q10.6 3.37 9.13 1.53Q8.71 1.02 8.2 0.65Q6.87 -0.3 4.86 -0.3Q2.88 -0.3 1.56 0.63Q1.02 1.01 0.59 1.55Q-0.89 3.4 -0.89 6.98L-0.89 10.12Q-0.86 13.55 0.62 15.39Q1.04 15.91 1.56 16.28Q2.89 17.23 4.89 17.23Q6.91 17.23 8.23 16.27Q8.76 15.89 9.17 15.35ZM18.17 6.96L16.37 6.96L16.37 9.61L18.16 9.61Q19.7 9.61 20.4 10.38Q20.98 11.01 20.98 12.17Q20.98 12.89 20.66 13.41Q20.51 13.66 20.29 13.86Q20.24 13.91 20.19 13.95Q19.51 14.5 18.4 14.5Q17.63 14.5 17.04 14.17Q16.82 14.05 16.62 13.89Q16.28 13.6 16.1 13.23Q15.9 12.82 15.9 12.32L12.51 12.32Q12.51 13.58 13.04 14.55Q13.44 15.3 14.14 15.88Q14.32 16.03 14.52 16.17Q16.05 17.23 18.32 17.23Q20.95 17.23 22.59 15.95Q22.65 15.9 22.7 15.86Q23.41 15.28 23.81 14.53Q24.36 13.52 24.36 12.21Q24.36 11.06 23.89 10.16Q23.78 9.96 23.65 9.78Q23.64 9.76 23.63 9.74Q22.92 8.74 21.5 8.23Q22.29 7.87 22.87 7.31Q23.15 7.04 23.38 6.72Q23.81 6.13 23.98 5.47Q24.09 5.03 24.09 4.56Q24.09 3.04 23.4 1.95Q23.06 1.42 22.56 0.99Q21.02 -0.3 18.32 -0.3Q16.81 -0.3 15.56 0.25Q15.51 0.27 15.46 0.3Q14.35 0.81 13.66 1.66Q13.55 1.8 13.45 1.95Q13.17 2.36 13 2.8Q12.73 3.52 12.73 4.35L16.11 4.35Q16.11 3.91 16.29 3.55Q16.45 3.22 16.77 2.96Q16.9 2.86 17.04 2.77Q17.62 2.43 18.4 2.43Q19.39 2.43 19.99 2.91Q20.04 2.96 20.09 3Q20.21 3.12 20.31 3.25Q20.71 3.78 20.71 4.61Q20.71 5.46 20.31 6.04Q20.21 6.19 20.08 6.32L20.08 6.32Q19.46 6.96 18.17 6.96ZM45.68 15.35Q47.14 13.48 47.14 9.94L47.14 6.8Q47.11 3.37 45.63 1.53Q45.22 1.02 44.7 0.65Q43.37 -0.3 41.37 -0.3Q39.39 -0.3 38.07 0.63Q37.53 1.01 37.09 1.55Q35.61 3.4 35.61 6.98L35.61 10.12Q35.65 13.55 37.12 15.39Q37.54 15.91 38.07 16.28Q39.39 17.23 41.39 17.23Q43.41 17.23 44.74 16.27Q45.26 15.89 45.68 15.35ZM72.16 17L83.86 17L83.86 14.26L76.52 14.26L80.4 10.17Q82 8.43 82.65 7.12Q83.31 5.8 83.31 4.54Q83.31 2.81 82.49 1.67Q82.22 1.28 81.85 0.96Q80.39 -0.3 77.75 -0.3Q76.14 -0.3 74.85 0.34Q74.76 0.38 74.67 0.43Q73.82 0.89 73.22 1.56Q72.85 1.97 72.57 2.45Q72.32 2.88 72.16 3.33Q71.82 4.25 71.82 5.3L75.22 5.3Q75.22 4.09 75.8 3.32Q75.84 3.27 75.88 3.22Q76.12 2.94 76.41 2.76Q76.95 2.43 77.69 2.43Q78.54 2.43 79.07 2.83Q79.21 2.94 79.33 3.08Q79.35 3.09 79.36 3.11Q79.91 3.76 79.91 4.87Q79.91 5.7 79.36 6.62Q78.82 7.55 77.68 8.79L72.16 14.67L72.16 17ZM95.95 15.35Q97.42 13.48 97.42 9.94L97.42 6.8Q97.38 3.37 95.91 1.53Q95.49 1.02 94.97 0.65Q93.65 -0.3 91.64 -0.3Q89.66 -0.3 88.34 0.63Q87.8 1.01 87.37 1.55Q85.89 3.4 85.89 6.98L85.89 10.12Q85.92 13.55 87.4 15.39Q87.82 15.91 88.34 16.28Q89.66 17.23 91.66 17.23Q93.68 17.23 95.01 16.27Q95.54 15.89 95.95 15.35ZM99.7 17L111.4 17L111.4 14.26L104.06 14.26L107.94 10.17Q109.53 8.43 110.19 7.12Q110.85 5.8 110.85 4.54Q110.85 2.81 110.03 1.67Q109.75 1.28 109.39 0.96Q107.93 -0.3 105.29 -0.3Q103.68 -0.3 102.39 0.34Q102.3 0.38 102.21 0.43Q101.36 0.89 100.76 1.56Q100.39 1.97 100.11 2.45Q99.86 2.88 99.7 3.33Q99.36 4.25 99.36 5.3L102.76 5.3Q102.76 4.09 103.34 3.32Q103.38 3.27 103.42 3.22Q103.66 2.94 103.95 2.76Q104.49 2.43 105.23 2.43Q106.08 2.43 106.61 2.83Q106.75 2.94 106.87 3.08Q106.89 3.09 106.9 3.11Q107.45 3.76 107.45 4.87Q107.45 5.7 106.9 6.62Q106.36 7.55 105.22 8.79L99.7 14.67L99.7 17ZM58.62 2.55L58.62 -0.24L58.05 -0.24Q55.64 -0.23 53.77 0.78Q53.63 0.86 53.5 0.93Q52.75 1.38 52.13 1.97Q51.14 2.92 50.49 4.23Q49.44 6.35 49.44 9.13L49.44 10.35Q49.44 13.19 50.81 15Q50.95 15.18 51.1 15.35Q51.75 16.09 52.55 16.53Q53.81 17.23 55.45 17.23Q56.86 17.23 58.01 16.7Q58.23 16.6 58.43 16.48Q59.06 16.12 59.55 15.63Q60.1 15.09 60.47 14.38Q60.58 14.18 60.67 13.97Q61.19 12.78 61.19 11.37Q61.19 8.88 59.99 7.31Q59.94 7.24 59.88 7.17Q59.36 6.54 58.7 6.16Q57.69 5.58 56.34 5.58Q55.07 5.58 54.07 6.1Q53.44 6.43 52.91 6.96Q53.12 5.42 53.96 4.38Q54.24 4.03 54.59 3.74Q54.62 3.71 54.66 3.69Q56.05 2.58 58.29 2.55L58.62 2.55ZM25.38 18.46L27.9 18.46L34.18 -0.07L31.66 -0.07L25.38 18.46ZM61.89 18.46L64.41 18.46L70.69 -0.07L68.17 -0.07L61.89 18.46ZM125.43 10.57L123.49 10.57L123.49 -0.07L120.07 -0.07L112.96 11.17L113.11 13.3L120.1 13.3L120.1 17L123.49 17L123.49 13.3L125.43 13.3L125.43 10.57ZM6.67 3.41Q7.25 4.37 7.25 6.5L7.25 10.55Q7.23 12.55 6.68 13.53Q6.46 13.91 6.13 14.15Q5.63 14.5 4.89 14.5Q4.17 14.5 3.67 14.16Q3.31 13.92 3.06 13.49Q2.5 12.47 2.5 10.39L2.5 6.24Q2.53 4.28 3.1 3.36Q3.32 3 3.65 2.78Q4.14 2.44 4.86 2.44Q5.59 2.44 6.09 2.78Q6.43 3.01 6.67 3.41ZM43.18 3.41Q43.76 4.37 43.76 6.5L43.76 10.55Q43.73 12.55 43.18 13.53Q42.96 13.91 42.64 14.15Q42.14 14.5 41.39 14.5Q40.67 14.5 40.18 14.16Q39.81 13.92 39.57 13.49Q39 12.47 39 10.39L39 6.24Q39.03 4.28 39.6 3.36Q39.83 3 40.15 2.78Q40.64 2.44 41.37 2.44Q42.09 2.44 42.59 2.78Q42.94 3.01 43.18 3.41ZM93.45 3.41Q94.03 4.37 94.03 6.5L94.03 10.55Q94.01 12.55 93.46 13.53Q93.24 13.91 92.91 14.15Q92.41 14.5 91.66 14.5Q90.94 14.5 90.45 14.16Q90.08 13.92 89.84 13.49Q89.27 12.47 89.27 10.39L89.27 6.24Q89.31 4.28 89.88 3.36Q90.1 3 90.42 2.78Q90.92 2.44 91.64 2.44Q92.36 2.44 92.86 2.78Q93.21 3.01 93.45 3.41ZM120.1 10.57L116.33 10.57L119.88 4.94L120.1 4.55L120.1 10.57ZM54.37 8.46Q54.81 8.3 55.31 8.3Q55.96 8.3 56.46 8.57Q56.84 8.78 57.14 9.16L57.14 9.16Q57.82 10.01 57.82 11.41Q57.82 12.75 57.17 13.6Q57.16 13.62 57.15 13.64Q56.81 14.07 56.36 14.29Q55.92 14.5 55.38 14.5Q54.73 14.5 54.23 14.22Q53.81 13.98 53.51 13.54Q52.84 12.59 52.84 10.89L52.84 9.86Q52.97 9.57 53.16 9.32Q53.43 8.98 53.82 8.73Q54.09 8.56 54.37 8.46Z"
+                                fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="right-side-header">
+                    <svg width="49.000000" height="48.000000" viewBox="0 0 49 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs>
+                            <clipPath id="clip4_61">
+                                <rect id="bell-alt_svgrepo.com" width="49.000000" height="48.000000" fill="white"
+                                    fill-opacity="0" />
+                            </clipPath>
+                        </defs>
+                        <rect id="bell-alt_svgrepo.com" width="49.000000" height="48.000000" fill="#FFFFFF"
+                            fill-opacity="0" />
+                        <g clip-path="url(#clip4_61)">
+                            <path id="Vector"
+                                d="M32.29 12.81C34.36 14.61 35.52 17.05 35.52 19.6C35.52 23.53 36.43 26.48 37.61 28.65C39.11 31.42 39.87 32.81 39.83 33.12C39.78 33.49 39.71 33.59 39.4 33.81C39.14 34 37.82 34 35.18 34L13.82 34C11.18 34 9.85 34 9.59 33.81C9.28 33.59 9.22 33.49 9.17 33.12C9.13 32.81 9.88 31.42 11.38 28.65C12.56 26.48 13.47 23.53 13.47 19.6C13.47 17.05 14.63 14.61 16.7 12.81C18.77 11.01 21.57 10 24.5 10C27.42 10 30.23 11.01 32.29 12.81ZM24.5 10L24.5 6M19.09 40C20.54 41.24 22.43 42 24.5 42C26.58 42 28.47 41.24 29.92 40"
+                                stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="5.000000"
+                                stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                    <h4>Admin</h4>
+                </div>
+            </div>
+            <div class="add-product">
+                <h1>Add New Product</h1>
+                <div class="row">
+                    <div class="col-lg-4 first-col col-md-11 col-sm-10 col-9">
+                        <form>
+                            <div class="mb-3">
+                                <label for="productName" class="form-label">Product Name</label>
+                                <input type="text" class="form-control" id="productName" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="unit" class="form-label">Unit</label>
+                                <br />
+                                <div class="input-group mb-3">
+                                    <span class="btn-contain">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Please Select</button>
+                                    </span>
+                                    <span class="svg">
+                                        <svg width="32.000000" height="31.000000" viewBox="0 0 32 31" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <desc>
+                                                Created with Pixso.
+                                            </desc>
+                                            <defs>
+                                                <clipPath id="clip1_260">
+                                                    <rect id="plus-circle_svgrepo.com" width="32.000000"
+                                                        height="31.000000" fill="white" fill-opacity="0" />
+                                                </clipPath>
+                                            </defs>
+                                            <rect id="plus-circle_svgrepo.com" width="32.000000" height="31.000000"
+                                                fill="#FFFFFF" fill-opacity="0" />
+                                            <g clip-path="url(#clip1_260)">
+                                                <path id="Vector"
+                                                    d="M17.33 11.62C17.33 10.91 16.73 10.33 16 10.33C15.26 10.33 14.66 10.91 14.66 11.62L14.66 14.2L12 14.2C11.26 14.2 10.66 14.78 10.66 15.5C10.66 16.21 11.26 16.79 12 16.79L14.66 16.79L14.66 19.37C14.66 20.08 15.26 20.66 16 20.66C16.73 20.66 17.33 20.08 17.33 19.37L17.33 16.79L20 16.79C20.73 16.79 21.33 16.21 21.33 15.5C21.33 14.78 20.73 14.2 20 14.2L17.33 14.2L17.33 11.62ZM2.66 15.5C2.66 8.36 8.63 2.58 16 2.58C23.36 2.58 29.33 8.36 29.33 15.5C29.33 22.63 23.36 28.41 16 28.41C8.63 28.41 2.66 22.63 2.66 15.5Z"
+                                                    fill="#25ADD6" fill-opacity="1.000000" fill-rule="evenodd" />
+                                            </g>
+                                        </svg>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="unit" class="form-label">Unit</label>
+                                <br />
+                                <div class="input-group mb-3">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Please Select</button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="sku" class="form-label">SKU</label>
+                                <input type="text" class="form-control" id="sku" placeholder="SKU">
+                            </div>
+                            <div class="mb-3">
+                                <label for="brand" class="form-label">Brand</label>
+                                <br />
+                                <div class="input-group mb-3">
+                                    <span class="btn-contain">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Please Select</button>
+                                    </span>
+                                    <span class="svg">
+                                        <svg width="32.000000" height="31.000000" viewBox="0 0 32 31" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <desc>
+                                                Created with Pixso.
+                                            </desc>
+                                            <defs>
+                                                <clipPath id="clip1_260">
+                                                    <rect id="plus-circle_svgrepo.com" width="32.000000"
+                                                        height="31.000000" fill="white" fill-opacity="0" />
+                                                </clipPath>
+                                            </defs>
+                                            <rect id="plus-circle_svgrepo.com" width="32.000000" height="31.000000"
+                                                fill="#FFFFFF" fill-opacity="0" />
+                                            <g clip-path="url(#clip1_260)">
+                                                <path id="Vector"
+                                                    d="M17.33 11.62C17.33 10.91 16.73 10.33 16 10.33C15.26 10.33 14.66 10.91 14.66 11.62L14.66 14.2L12 14.2C11.26 14.2 10.66 14.78 10.66 15.5C10.66 16.21 11.26 16.79 12 16.79L14.66 16.79L14.66 19.37C14.66 20.08 15.26 20.66 16 20.66C16.73 20.66 17.33 20.08 17.33 19.37L17.33 16.79L20 16.79C20.73 16.79 21.33 16.21 21.33 15.5C21.33 14.78 20.73 14.2 20 14.2L17.33 14.2L17.33 11.62ZM2.66 15.5C2.66 8.36 8.63 2.58 16 2.58C23.36 2.58 29.33 8.36 29.33 15.5C29.33 22.63 23.36 28.41 16 28.41C8.63 28.41 2.66 22.63 2.66 15.5Z"
+                                                    fill="#25ADD6" fill-opacity="1.000000" fill-rule="evenodd" />
+                                            </g>
+                                        </svg>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="business-locations" class="form-label">Business Locations</label>
+                                <input type="text" class="form-control" id="business-locations"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="barcode-type" class="form-label">Barcode Type</label>
+                                <br />
+                                <div class="input-group mb-3">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Code128(C128)</button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="category" class="form-label">Category</label>
+                                <br />
+                                <div class="input-group mb-3">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Please Select</button>
+                                </div>
+                            </div>
+                            <form action="/action_page.php">
+                                <input type="checkbox" id="manage-stock" name="manage-stock" value="Manage Stock">
+                                <span class="stock">Manage Stock
+                                    <svg width="24.800293" height="23.233643" viewBox="0 0 24.8003 23.2336" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                            Created with Pixso.
+                                        </desc>
+                                        <defs />
+                                        <ellipse id="Ellipse 5" cx="12.400146" cy="11.616821" rx="12.400146"
+                                            ry="11.616822" fill="#25ADD6" fill-opacity="1.000000" />
+                                        <path id="i"
+                                            d="M14.29 6.7C14.29 7.54 13.54 8.23 12.64 8.23C11.75 8.23 11.01 7.54 11.01 6.7C11.01 5.86 11.75 5.17 12.64 5.17C13.54 5.17 14.29 5.86 14.29 6.7ZM14.15 20.54L11.12 20.54L11.12 9.64L14.15 9.64L14.15 20.54Z"
+                                            fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    </svg>
+
+                                </span>
+                            </form>
+                            <p>Enable stock management at product level</p>
+                            <div class="mb-3">
+                                <label for="productName" class="form-label">Alert Quantity</label>
+                                <input type="text" class="form-control" id="productName" aria-describedby="emailHelp"
+                                    placeholder="Alert quantity">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-7 second-col col-md-12">
+                        <div class="first-row">
+                            <div>
+                                <label for="myfile">Product Image:</label>
+                                <br />
+                                <input type="file" id="myfile" name="myfile">
+                                <div class="p-class">
+                                    <p>Max file size: 5MB</p>
+                                    <p>Aspect ratio should be 1:1</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="editor">Product Description:</label>
+                                <div>
+                                    <textarea id="editor" class="styled-textarea"
+                                        placeholder="Start writing here..."></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="myfile">Product Brochure:</label>
+                                <br />
+                                <input type="file" id="myfile" name="myfile">
+                                <div class="p-class">
+                                    <p>Max file size: 5MB</p>
+                                    <p>Allowed file: .pdf ,.csv ,.zip ,.doc ,.docx ,.jpeg ,.jpg ,.png</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second-row">
+                            <div class="text">
+                                <div class="enable-production">
+                                    <form action="/action_page.php">
+                                        <input type="checkbox" id="enable-production" name="enable-production"
+                                            value="enable-production">
+                                        <span>Enable Production description, IMEI or Serial
+                                            Number
+                                        </span>
+                                    </form>
+                                </div>
+                                <div>
+                                    <form action="/action_page.php">
+                                        <input type="checkbox" id="not-selling" name="not-selling" value="not-selling">
+                                        <span class="stock">Not for selling
+                                        </span>
+                                    </form>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="mb-3 weight">
+                                    <label for="weight" class="form-label">Weight</label>
+                                    <input type="text" class="form-control" id="weight" placeholder="Weight">
+                                </div>
+                                <div class="mb-3 weight">
+                                    <label for="service" class="form-label">Service staff timer/Preparation time (in
+                                        minutes):</label>
+                                    <input type="text" class="form-control" id="service"
+                                        placeholder="Service staff timer/Preparation time">
+                                </div>
+                            </form>
+                            <div>
+                                <form action="/action_page.php">
+                                    <input type="checkbox" id="not-selling" name="not-selling" value="not-selling">
+                                    <span class="stock">Disable Woocomerce Sync
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

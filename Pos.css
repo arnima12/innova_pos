@@ -1,0 +1,394 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(180.00deg, rgb(146, 189, 214), rgb(76, 99, 112) 100%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+nav {
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(216, 226, 235);
+    margin: 10px;
+}
+
+.nav-content {
+    gap: 12rem;
+}
+
+.nav-right svg {
+    width: 18px;
+}
+
+.navExpense {
+    background: rgb(69, 48, 153);
+    color: white;
+    font-size: 10px;
+    padding: 4px;
+}
+
+.dropdown-content {
+    padding: 0 20px;
+}
+
+.dropdown button {
+    background: rgb(200, 199, 199);
+    width: 12rem;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+}
+
+.box {
+    background: rgb(255, 255, 255);
+    color: rgb(55, 48, 48);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.box img {
+    width: 6rem;
+    height: 3rem;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background: rgb(200, 199, 199);
+}
+
+.first-col {
+    margin-bottom: 4rem;
+}
+
+.first-col-row,
+.second-col-row {
+    border-radius: 10px;
+    background: rgb(216, 226, 235);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.state {
+    display: flex;
+    gap: 1px;
+}
+
+.draft svg {
+    width: 1.5rem;
+}
+
+.draft {
+    background: rgb(119, 172, 241);
+    height: 20px;
+}
+
+.quotation {
+    background: rgb(248, 136, 129);
+    height: 20px;
+}
+
+.quotation svg {
+    width: 1.5rem;
+}
+
+.suspended {
+    background: rgb(223, 72, 3);
+    height: 20px;
+}
+
+.suspended svg {
+    width: 1rem
+}
+
+.draft .text,
+.quotation .text,
+.suspended .text,
+.credit-sale .text,
+.multiple-pay .text,
+.card-pay .text,
+.cash .text {
+    font-size: 12px;
+}
+
+.cash-state {
+    display: flex;
+    justify-content: end;
+    gap: 1px;
+}
+
+.credit-sale {
+    background: rgb(151, 71, 255);
+    height: 25px;
+}
+
+.card-pay {
+    background: rgb(242, 139, 92);
+    height: 25px;
+}
+
+.multiple-pay {
+    background: rgb(119, 209, 117);
+    height: 25px;
+}
+
+.cash {
+    background: rgb(146, 189, 214);
+    height: 25px;
+}
+
+.credit-sale svg,
+.card-pay svg,
+.multiple-pay svg,
+.cash svg {
+    width: 1rem
+}
+
+.payable-content {
+    display: flex;
+    justify-content: end;
+    margin-top: 0.5rem;
+}
+
+.payable {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0px 0px 0px 0px;
+    background: rgb(38, 34, 98);
+    justify-self: center
+}
+
+.payable h4 {
+    color: white;
+    font-size: 13px;
+}
+
+.payable p {
+    color: white;
+    font-size: 16px;
+}
+
+.second-col .form-control::placeholder {
+    color: rgb(154, 150, 150);
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.second-col .input-group svg {
+    width: 1.5rem;
+}
+
+.walk-in-customer {
+    width: 12rem;
+}
+
+.walk-in-customer .form-control::placeholder {
+    color: rgb(55, 48, 48);
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.cart {
+    padding-bottom: 1rem;
+}
+
+.cart .table .amount {
+    display: flex;
+    align-items: center;
+}
+
+.minus-btn,
+.plus-btn {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(217, 217, 217);
+}
+
+.cart .table button {
+    padding: 0 6px;
+}
+
+.cart .table button svg {
+    width: 6px;
+}
+
+.cart .table .product {
+    color: rgb(69, 48, 153);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.cart .table .btn-text {
+    font-size: 12px;
+    padding: 2px 10px;
+}
+
+.cart .table thead tr {
+    margin: 0 10px
+}
+
+.cart .tax {
+    padding: 4px 12px;
+}
+
+.table-secondary {
+    --bs-table-bg: #5b5d5c;
+    background-color: var(--bs-table-bg) !important;
+}
+
+.cart .table-data {
+    border-collapse: separate;
+    width: 100%;
+}
+
+.cart th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background: rgb(200, 199, 199);
+    margin-right: 8px;
+    color: rgb(38, 34, 98);
+}
+
+.cart .table-data {
+    background: rgb(200, 199, 199);
+}
+
+.cart table .price {
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.cart table .table-text {
+    font-size: 10px;
+    color: rgb(69, 48, 153);
+    font-weight: 400;
+    text-align: center;
+    width: 58px;
+    padding: 0 12px;
+}
+
+.cart table .minus-btn {
+    color: red;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(217, 217, 217);
+
+}
+
+.cart table .plus-btn {
+    color: green;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(217, 217, 217);
+}
+
+.cart table .cross-btn {
+    text-align: center;
+    color: red;
+}
+
+.cart .table-button {
+    justify-content: center;
+}
+
+.cart .btn-text {
+    padding: 0 10px;
+    background: white;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.cart table .subtotal {
+    padding: 0 12px;
+    font-weight: 800;
+    font-size: 12px
+}
+
+.cart table .tk {
+    text-align: center;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 72, 3);
+    background: rgb(217, 217, 217);
+}
+
+.cart table .total {
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 72, 3);
+    background: rgb(255, 255, 255);
+}
+
+.cart .total-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.cart .shipping-status {
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: 800;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.cart .shipping-total {
+    background: rgb(223, 72, 3);
+    width: 4rem;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
+
+.transaction {
+    background: rgb(53, 22, 242);
+    color: white;
+    width: 50%;
+}
+
+.transaction-box {
+    display: flex;
+    justify-content: end;
+    text-align: center
+}

@@ -1,0 +1,726 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(210.96deg, rgb(23, 16, 51) 14.804%, rgb(69, 48, 153) 49.94%, rgb(91, 146, 170) 71.789%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header-logo {
+    height: 100px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(217, 217, 217);
+    margin: 16px 20px;
+    padding: 20px
+}
+
+.header-logo img {
+    height: 50px;
+    width: 200px;
+    text-align: center
+}
+
+.menubar {
+    width: 260px;
+    background: rgb(216, 226, 235);
+    border-radius: 10px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 25px 20px;
+    height: 93%;
+    margin: 16px 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.right-side-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+    color: white;
+
+}
+
+.middle-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 2rem;
+    color: white;
+}
+
+.sidebar-links li {
+    list-style: none;
+}
+
+.sidebar-links svg {
+    height: 16px;
+    width: 25px;
+}
+
+.sidebar-links a {
+    color: rgb(38, 34, 98);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    pointer-events: auto;
+    text-decoration: none;
+    display: flex;
+    gap: 16px;
+}
+
+.sidebar-links a:hover {
+    color: black;
+}
+
+.link_logo {
+    display: flex;
+    align-items: center;
+}
+
+.btn-contain {
+    width: 85%;
+    text-align: left;
+    border: 1px solid grey
+}
+
+.input-group .svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group {
+    background-color: white;
+}
+
+.first-col {
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(217, 217, 217);
+    padding-top: 12px;
+    margin-left: 40px;
+    margin-bottom: 2rem;
+}
+
+.dashboard-body {
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-right: 1.5rem;
+}
+
+.retail-body {
+    padding-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(216, 226, 235);
+}
+
+.retail-body h2 {
+    color: rgb(69, 48, 153);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 30px;
+    padding-top: 30px
+}
+
+.retail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.retail .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.retail .icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6,
+.icon7,
+.icon8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.retail .icon1 {
+    background: rgb(223, 72, 3);
+}
+
+.retail .icon2 {
+    background: rgb(232, 192, 95);
+}
+
+.retail .icon3 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(232, 192, 95);
+}
+
+.retail .icon4 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(106, 162, 121);
+}
+
+.retail .icon5 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(106, 161, 121);
+}
+
+.retail .icon6 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(37, 173, 214);
+}
+
+.retail .icon7 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(248, 136, 129);
+}
+
+.retail .icon8 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(38, 34, 98);
+}
+
+.retail svg {
+    width: 30px;
+    height: 30px
+}
+
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8 {
+    width: 129.66px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(147, 167, 198);
+}
+
+.card2 {
+    background: rgb(242, 139, 92);
+}
+
+.card3 {
+    background: rgb(69, 48, 153);
+}
+
+.card4 {
+    background: rgb(232, 192, 95);
+}
+
+.card5 {
+    background: rgb(37, 173, 214);
+}
+
+.card6 {
+    background: rgb(69, 48, 153);
+}
+
+.card7 {
+    background: rgb(37, 173, 214);
+}
+
+.card8 {
+    background: rgb(147, 167, 198);
+}
+
+.nested-card {
+    border-radius: 0px 0px 10px 10px;
+    background: rgb(217, 217, 217);
+    color: rgb(121, 106, 106);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.retail .content {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+    height: 40px;
+}
+
+.payment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.sales-payment,
+.purchase-payment {
+    margin-top: 10px;
+    padding-bottom: 2rem;
+    width: 90%;
+    box-sizing: border-box;
+    border-top: 8px solid rgb(37, 173, 214);
+    border-radius: 20px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(216, 226, 235);
+}
+
+.sales-payment-heading,
+.purchase-payment-heading,
+.product-stock-alert-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(38, 34, 98);
+    font-weight: 700;
+}
+
+.sales-payment svg,
+.purchase-payment svg,
+.product-stock-alert svg {
+    width: 30px;
+    height: 20px;
+}
+
+.payment .export {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+.payment .export-card {
+    display: flex;
+    gap: 4px;
+    font-size: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(217, 217, 217);
+    align-items: center;
+}
+
+.payment .export-card svg,
+.product-stock-alert .export-card svg,
+.sales-order svg,
+.pending-shipments svg {
+    height: 15px;
+    width: 10px;
+}
+
+.payment table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+
+}
+
+.payment th {
+    box-sizing: border-box;
+    border: 1px solid rgb(176, 176, 176);
+    background: rgb(203, 203, 203);
+    padding: 4px;
+    text-align: center;
+    font-size: 8px;
+    color: rgb(69, 48, 153);
+}
+
+.payment td {
+    color: rgb(55, 48, 48);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.payment .customer-table {
+    margin: 0px 10px;
+}
+
+.payment .customer-table p {
+    color: rgb(55, 48, 48);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.payment .pagination {
+    display: flex;
+    justify-content: right;
+}
+
+.payment .pagination-card {
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 72, 3);
+    background: rgb(255, 255, 255);
+    color: rgb(69, 48, 153);
+    font-size: 8px;
+    font-weight: 700;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+}
+
+.product-stock-alert {
+    box-sizing: border-box;
+    border-top: 8px solid rgb(37, 173, 214);
+    border-radius: 20px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(216, 226, 235);
+    height: 450px;
+    margin-top: 10px;
+}
+
+.product-stock-alert .export {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    width: 550px;
+}
+
+.product-stock-alert .export-card {
+    display: flex;
+    gap: 4px;
+    font-size: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(217, 217, 217);
+    align-items: center;
+}
+
+.product-stock-alert table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-stock-alert th {
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(255, 255, 255);
+    padding: 4px;
+    text-align: left;
+    font-size: 8px;
+    color: rgb(69, 48, 153);
+}
+
+.product-table {
+    margin: 0 10px;
+}
+
+.product-table td {
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(217, 217, 217);
+    color: rgb(58, 50, 50);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    padding-left: 4px;
+
+}
+
+.product-table p,
+.sales-order p,
+.pending-shipments p {
+    color: rgb(55, 48, 48);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.product-table .pagination,
+.sales-order .pagination,
+.pending-shipments .pagination {
+    display: flex;
+    justify-content: right;
+}
+
+.product-table .pagination-card,
+.sales-order .pagination-card,
+.pending-shipments .pagination-card {
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 72, 3);
+    background: rgb(255, 255, 255);
+    color: rgb(69, 48, 153);
+    font-size: 8px;
+    font-weight: 700;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+}
+
+.sales-order,
+.pending-shipments {
+    box-sizing: border-box;
+    border-top: 8px solid rgb(37, 173, 214);
+    border-radius: 20px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(216, 226, 235);
+    height: 320px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.sales-order-heading,
+.pending-shipments-heading {
+    display: flex;
+    align-items: center;
+    color: rgb(38, 34, 98);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    height: 40px;
+}
+
+.sales-order-heading svg,
+.pending-shipments-heading svg {
+    width: 30px;
+    height: 40px;
+}
+
+.sales-order .entry-number,
+.pending-shipments .entry-number {
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 72, 3);
+    background: rgb(255, 255, 255);
+    padding: 4px 10px;
+    margin: 10px;
+
+}
+
+.sales-order .number,
+.pending-shipments .number {
+    color: rgb(69, 48, 153);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sales-order .down-arrow svg,
+.pending-shipments .down-arrow svg {
+    height: 12px;
+
+}
+
+.sales-order .entry-starting,
+.pending-shipments .entry-starting {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.sales-order .entry-starting .first-span,
+.pending-shipments .entry-starting .first-span {
+    color: rgb(58, 50, 50);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.sales-order .export,
+.pending-shipments .export {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    width: 550px;
+}
+
+.sales-order .export-card,
+.pending-shipments .export-card {
+    display: flex;
+    gap: 4px;
+    font-size: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(217, 217, 217);
+    align-items: center;
+}
+
+.sales-order table,
+.pending-shipments table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+.sales-order th,
+.pending-shipments th {
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(255, 255, 255);
+    color: rgb(16, 15, 15);
+    font-size: 12px;
+    font-weight: 700;
+    height: 90px;
+    width: 40px;
+    padding: 0 4px;
+}
+
+.sales-order th .name,
+.pending-shipments th .name {
+    text-align: left;
+}
+
+.sales-order th .icon,
+.pending-shipments th .icon {
+    text-align: right;
+}
+
+.sales-order .first-data,
+.pending-shipments .first-data {
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(203, 203, 203);
+    color: rgb(58, 50, 50);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    padding-left: 4px;
+    text-align: center;
+
+}
+
+.sales-order .second-data,
+.pending-shipments .second-data {
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 192, 192);
+    background: rgb(109, 102, 102);
+}
+
+.table-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer {
+    padding: 1rem 3rem;
+}
+
+.footer .footer-icon {
+    justify-self: end;
+}
+
+.footer svg {
+    width: 30px;
+    height: 30px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer p {
+    color: rgb(156, 156, 156);
+}
+
+@media screen and (max-width: 1260px) {
+
+    .retail {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 970px) {
+    .payment {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sales-payment,
+    .purchase-payment {
+        width: 100%
+    }
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        height: 80px;
+        width: 200px;
+        margin: 12px 16px;
+        padding: 15px;
+    }
+
+
+    .header-logo img {
+        height: 40px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header-logo {
+        height: 60px;
+        width: 160px;
+        margin: 8px 12px;
+        padding: 10px;
+    }
+
+    .header-logo img {
+        height: 30px;
+        width: 120px;
+    }
+}
