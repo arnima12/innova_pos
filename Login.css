@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(210.96deg, rgb(23, 16, 51) 17.751%, rgb(69, 48, 153) 49.91%, rgb(91, 146, 170) 69.908%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.login-background {
+
+    width: 100%;
+    height: 100%;
+}
+
+.background-wrapper {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('./assets/login-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.login-logo {
+    background-color: white;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(217, 217, 217);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.login-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login {
+    width: 100%;
+    display: flex;
+}
+
+.head {
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.heading h1 {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    text-align: left;
+    -webkit-text-stroke: 3px rgb(223, 72, 3);
+    color: transparent;
+}
+
+.heading h2 {
+    color: rgb(36, 172, 213);
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.heading span {
+    color: rgb(36, 172, 213);
+    font-weight: bold;
+}
+
+.heading p {
+    margin-top: 20px;
+    width: 450px;
+    color: white;
+}
+
+.login-phone {
+    margin-top: 40px;
+}
+
+.login-phone img {
+    height: 14rem;
+}
+
+.login-googleplay {
+    width: 250px;
+    margin-bottom: 2rem;
+}
+
+.login-googleplay img {
+    width: 8rem;
+}
+
+.google-play-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.google-play-img p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.login-box {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+
+.login-box .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(189, 220, 230);
+    padding: 20px;
+    width: 400px;
+    height: 450px;
+}
+
+.login-box-logo img {
+    height: 6rem;
+    width: 24rem;
+}
+
+.login-box .form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.login-box .form input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 20px
+}
+
+.login-box .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box .form-group1,
+.login-box .form-group2 {
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background: rgb(217, 217, 217);
+    height: 3rem;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.login-box .form-group1 svg,
+.login-box .form-group2 svg {
+    margin-left: 2rem
+}
+
+.form-group1 input[type="text"]::placeholder,
+.form-group2 input[type="text"]::placeholder {
+    color: rgb(36, 172, 213);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.login-btn button {
+    border-radius: 10px;
+    background: rgb(223, 72, 3);
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    border: white;
+    height: 3rem;
+    width: 14rem;
+    color: rgb(254, 254, 254);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.forgot {
+    color: rgb(134, 128, 128);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.account {
+    margin-top: 1rem;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.account .span1 {
+    color: rgb(134, 128, 128);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.account .span2 {
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.account a {
+    text-decoration: none;
+    color: rgb(69, 48, 153);
+}
+
+@media (max-width: 980px) {
+    .login {
+        display: block;
+    }
+
+    .login-box {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .background-wrapper {
+        top: -40px;
+        right: 0;
+        width: 70%;
+        height: 100%;
+    }
+
+    .heading p {
+        color: rgb(208, 146, 85);
+        font-weight: 400
+    }
+}
+
+@media (max-width: 480px) {
+    .heading p {
+        width: 300px
+    }
+}
+
+@media (max-width: 400px) {
+    .login-box .box {
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+
+    .login-box-logo img {
+        height: 4rem;
+        width: 16rem;
+    }
+}
