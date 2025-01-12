@@ -12,12 +12,12 @@
 
 <body>
 
-    <div class="row">
-        <div class="col-12 col-xl-3">
+    <div class="addCart">
+        <div class="addCartLeft">
             <div class="header-logo">
                 <img src="./assets/Innova-POS.png" alt="Innova Pos">
             </div>
-            <div class="menubar d-none d-sm-none d-md-none d-lg-none d-xl-block">
+            <div class="menubar">
                 <ul class="sidebar-links">
                     <li>
                         <a href="#">
@@ -352,7 +352,7 @@
             </div>
 
         </div>
-        <div class="col-12 col-xl-8">
+        <div class="addCartRight">
             <div class="header">
                 <div class="menu-btn">
                     <svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none"
@@ -776,7 +776,12 @@
             </div>
         </div>
     </div>
-
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', function () {
+            const addCartLeft = document.querySelector('.addCartLeft');
+            addCartLeft.classList.toggle('toggle');
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

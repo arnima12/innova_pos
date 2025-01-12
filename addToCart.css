@@ -24,6 +24,61 @@ html {
     overflow-y: auto;
 }
 
+
+.addCart {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px
+}
+
+.addCartLeft {
+    display: block;
+    width: 300px;
+    transition: width 0.3s ease-in-out;
+}
+
+.addCartLeft.toggle {
+    width: 80px;
+}
+
+.menubar {
+    display: block;
+    width: 260px;
+    background: rgb(216, 226, 235);
+    border-radius: 10px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 25px 0;
+    height: 89%;
+    margin: 16px 20px;
+}
+
+.addCartLeft.toggle .menubar {
+    width: 64px;
+    transition: width 0.3s ease-in-out;
+}
+
+.addCartLeft.toggle .sidebar-links .link_name {
+    color: transparent
+}
+
+.addCartRight {
+    width: 92%
+}
+
+
+.addCartLeft.toggle .header-logo {
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    transition: width 0.3s ease-in-out;
+}
+
+.addCartLeft.toggle .header-logo img {
+    width: 60px;
+    height: 20px;
+    transition: width 0.3s ease-in-out;
+}
+
 .header-logo {
     height: 100px;
     width: 260px;
@@ -43,22 +98,13 @@ html {
     text-align: center
 }
 
-.menubar {
-    width: 260px;
-    background: rgb(216, 226, 235);
-    border-radius: 10px;
-    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 25px 20px;
-    height: 100%;
-    margin: 16px 20px;
-}
 
 .header {
     display: flex;
     align-items: center;
     margin-top: 16px;
     justify-content: space-between;
-    height: 100px;
+    height: 93px;
 }
 
 .right-side-header {
@@ -78,6 +124,14 @@ html {
     color: white;
 }
 
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    gap: 0.7rem;
+}
+
 .sidebar-links li {
     list-style: none;
 }
@@ -89,7 +143,7 @@ html {
 
 .sidebar-links a {
     color: rgb(38, 34, 98);
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 23px;
     letter-spacing: 0%;
@@ -132,7 +186,15 @@ html {
     padding-top: 12px;
     margin-left: 40px;
     margin-bottom: 2rem;
+    width: 850px
 }
+
+.addCartRight {
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-right: 1.5rem;
+}
+
 
 .stock svg {
     width: 16px;
@@ -143,7 +205,7 @@ html {
     border-radius: 10px;
     box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgb(216, 226, 235);
-    margin-top: 16px;
+    margin-top: 8px;
     margin-right: 16px;
 }
 
@@ -157,6 +219,10 @@ html {
     line-height: 56px;
     text-align: left;
 }
+
+/* .add-product form {
+    width: 600px
+} */
 
 .styled-textarea {
     width: 100%
@@ -197,4 +263,22 @@ html {
 .second-row {
     padding: 1rem 2rem;
     margin: 2rem 1rem;
+}
+
+@media (max-width:990px) {
+    .first-row {
+        width: 800px
+    }
+}
+
+@media (max-width:860px) {
+    .styled-textarea {
+        width: 400px
+    }
+}
+
+@media (max-width:490px) {
+    .styled-textarea {
+        width: 300px
+    }
 }
